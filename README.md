@@ -1,2 +1,2 @@
 # Estudo
-Código simples para praticar.
+Códigos simples para praticar.
