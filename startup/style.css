@@ -7,6 +7,7 @@ nav a{
   margin-left: 20px;
 }
 
+/*Usando flex*/
 #Serviços {
   display: flex;
   flex-wrap: wrap;
@@ -27,3 +28,19 @@ nav a{
   border-radius: 8px;
 }
 
+/*Usando grid*/
+#Projetos h2{
+  margin-left: 25px;
+}
+
+#Projetos .articlesgroup{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#Projetos .articlesgroup article{
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 25px;
+}
