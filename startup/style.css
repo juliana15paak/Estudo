@@ -7,13 +7,23 @@ nav a{
   margin-left: 20px;
 }
 
-/*outra opção sem usar a tag nav no html
-
-header a:first-of-type {
-  margin-left: auto; 
+#Serviços {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-header a {
-  margin-left: 15px;
+#Serviços h2{
+  flex-basis: 100%;
+  margin-left: 25px;
 }
-*/
+
+#Serviços article{
+  flex-basis: 400px;
+  flex-grow: 1;
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
