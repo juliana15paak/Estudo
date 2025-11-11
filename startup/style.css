@@ -6,3 +6,14 @@ header{
 nav a{
   margin-left: 20px;
 }
+
+/*outra opção sem usar a tag nav no html
+
+header a:first-of-type {
+  margin-left: auto; 
+}
+
+header a {
+  margin-left: 15px;
+}
+*/
