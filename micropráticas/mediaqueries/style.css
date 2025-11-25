@@ -1,0 +1,17 @@
+.planos-container{
+  flex-direction: column;
+  gap: 20px;
+  background-color: #ffffff;
+}
+
+.card{
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+@media (min-width: 800px){
+  .planos-container{
+    flex-direction: row;
+  }
+}

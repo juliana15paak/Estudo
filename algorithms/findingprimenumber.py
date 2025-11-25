@@ -13,7 +13,6 @@ def FindPrimes(n):
         Primes[j] = False
   return Primes
 
-
 n = int(input("Digite um número inteiro positivo: "))
 Primes = FindPrimes(n)
 print(f"Números primos até {n}:")
