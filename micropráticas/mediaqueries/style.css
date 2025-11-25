@@ -1,18 +1,29 @@
 .planos-container{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  width: min(90%, 1000px);
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
   background-color: #ffffff;
 }
 
+h2{
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 20px;
+}
+.articlesgroup{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .card{
+  flex: 1;
   padding: 20px;
   border: 1px solid #eee;
   border-radius: 10px;
 }
 
 @media (min-width: 800px){
-  .planos-container{
+  .articlesgroup{
     flex-direction: row;
   }
 }
