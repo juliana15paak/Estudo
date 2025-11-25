@@ -1,0 +1,19 @@
+.hero{
+  display: grid;
+  gap: 30px;
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+.hero img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (min-width: 900px){
+  .hero{
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
