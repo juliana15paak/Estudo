@@ -5,3 +5,12 @@
   width: min(100% - 2rem, 900px);
   margin-inline: auto;
 }
+h1{
+  font-size: clamp(1,5rem, 5vw, 2.5rem);
+}
+section article{
+  background-color: #eee;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  padding: 2rem;
+}
