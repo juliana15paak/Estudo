@@ -6,11 +6,28 @@
   margin-inline: auto;
 }
 h1{
-  font-size: clamp(1,5rem, 5vw, 2.5rem);
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
 }
-section article{
+.bento-grid article, nav{
   background-color: #eee;
   border: 1px solid #d8d8d8;
   border-radius: 10px;
   padding: 2rem;
+}
+
+.card-perfil { grid-area: perfil; }
+.card-bio    { grid-area: bio; }
+.card-stats  { grid-area: stats; }
+.card-social { grid-area: social; }
+
+@media (min-width: 700px){
+  .bento-grid{
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto, auto;
+    grid-template-areas: 
+      "perfil bio bio"
+      "perfil stats social";
+  }
 }
