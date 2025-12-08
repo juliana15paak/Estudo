@@ -1,18 +1,32 @@
-## Getting Started
+# 🍕 JavaFoods - Sistema de Pedidos e Precificação
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto simula o núcleo de um sistema de delivery, focado na precificação dinâmica de produtos baseada em regras de negócio (tamanho, temperatura, impostos) utilizando conceitos avançados de Orientação a Objetos.
 
-## Folder Structure
+## 🚀 Tecnologias e Conceitos
+* **Java (JDK 17+)**
+* **POO:** Herança, Polimorfismo, Encapsulamento e Abstração.
+* **Interface (`Imprimivel`):** Contratos para saída de dados.
+* **Classes Abstratas:** Molde genérico para produtos.
+* **Enums (`Tamanho`):** Constantes com atributos e métodos próprios.
+* **Static Members:** Controle global de instâncias.
 
-The workspace contains two folders by default, where:
+## 📋 Estrutura do Projeto
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### Arquitetura
+* `Produto` (Abstract): Classe base que mantém o contador estático de produtos e define o contrato de preço.
+* `Pizza`: Implementa regra de preço baseada em multiplicadores do Enum `Tamanho`.
+* `Refrigerante`: Implementa regra de preço condicional (taxa de refrigeração) e formatação com operador ternário.
+* `Imprimivel` (Interface): Garante que todo item vendável tenha uma etiqueta padronizada.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Regras de Negócio Implementadas
+1.  **Pizzas:** O preço varia conforme o fator do tamanho (Pequeno 0.8x, Médio 1.0x, Gigante 1.5x).
+2.  **Refrigerantes:** Acréscimo de taxa se o produto for entregue gelado.
+3.  **Contador Global:** O sistema rastreia quantos produtos foram instanciados durante a execução.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 📦 Como executar
+1.  Clone este repositório.
+2.  Abra o projeto em sua IDE favorita (VS Code, Eclipse, IntelliJ).
+3.  Execute a classe `App.java`.
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
+Desenvolvido durante estudos de POO para fixação de conceitos de Polimorfismo e Interfaces.
