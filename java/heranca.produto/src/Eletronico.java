@@ -1,5 +1,8 @@
 public class Eletronico extends Produto{
-	private final int garantia_meses = 12;
+
+	public Eletronico(String nome, double preco){
+		super(nome, preco);
+	}
 
 	public int calcularPrecoFinal(){
 		double resultado = this.preco + (this.preco * Produto.imposto);
