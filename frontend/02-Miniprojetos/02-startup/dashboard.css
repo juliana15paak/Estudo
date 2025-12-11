@@ -1,0 +1,77 @@
+/*===========================================
+1. BASE 
+===========================================*/
+
+:root{
+  --color-primary: #6200ea;
+  --color-bg: #f4f7fc;
+  --color-text: #333;
+  --sidebar-width: 250px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  height: 100vh;
+}
+
+/*===========================================
+2. LAYOUT 
+===========================================*/
+
+.dashboard-layout{
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  grid-template-rows: 70px 1fr;
+  height: 100vh;
+  grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: white;
+  border-right: 1px solid #ddd;
+}
+.header {
+  grid-area: header;
+  background: white;
+  border-right: 1px solid #ddd;
+}
+main {
+  grid-area: main;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/*===========================================
+3. COMPONENTS 
+===========================================*/
+
+.sidebar__nav{
+  padding: 20px;
+}
+.sidebar__logo{
+  height: 10rem;
+  width: 250px;
+}
+.sidebar__link{
+  display: block;
+  color: #666;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.sidebar__link.is-active{
+  color: var(--color-primary);
+  background-color: #f3e5f5;
+  font-weight: bold;
+}
