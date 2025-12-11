@@ -61,7 +61,8 @@ main {
 }
 .sidebar__logo{
   height: 10rem;
-  width: 250px;
+  width: 80%;
+  margin: 0 auto;
 }
 .sidebar__link{
   display: block;
