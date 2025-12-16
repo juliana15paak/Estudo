@@ -40,7 +40,7 @@ Este repositório documenta minha jornada de estudos em **Ciência da Computaç�
 
   > **Resultado:** Lemos os restos de baixo para cima (ou na ordem inversa da coleta): `1111101`.
 
-  [📄 Ver Implementação (baseconversion.py)](./baseconversion.py)
+  [📄 Ver Implementação (base_conversion.py)](./base_conversion.py)
 </details>
 
 ---
@@ -96,7 +96,7 @@ Este repositório documenta minha jornada de estudos em **Ciência da Computaç�
 
   Os números que permanecerem `True` no final são os primos.
 
-  [📄 Ver Implementação (sieveerastothenes.py)](./sieveerastothenes.py)
+  [📄 Ver Implementação (sieve_erastothenes.py)](./sieve_erastothenes.py)
 </details>
 
 ---
@@ -114,7 +114,7 @@ Este repositório documenta minha jornada de estudos em **Ciência da Computaç�
   * O resultado (12 / 2 = 6) também é fator.
   * Adicionamos ambos à lista e economizamos iterações.
 
-  [📄 Ver Implementação (findingfactors.py)](./findingfactors.py)
+  [📄 Ver Implementação (findingfactors.py)](./finding_factors.py)
 
   #### Fatoração em Primos (Decomposição)
   Qualquer número inteiro pode ser representado como uma multiplicação de números primos (Teorema Fundamental da Aritmética).
@@ -127,7 +127,7 @@ Este repositório documenta minha jornada de estudos em **Ciência da Computaç�
   
   O algoritmo consiste em dividir o número sucessivamente pelos menores primos possíveis até chegar a 1.
 
-  [📄 Ver Implementação (primefactorization.py)](./primefactorization.py)
+  [📄 Ver Implementação (primefactorization.py)](./prime_factorization.py)
 </details>
 
 ---
